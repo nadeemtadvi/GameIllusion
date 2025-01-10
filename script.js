@@ -20,7 +20,7 @@ var sideCard = document.querySelector("#explore")
       pin: true,
       pinSpacing: false,
       scrub: 1,
-      markers: true,
+      
     },
   });
   
@@ -32,7 +32,7 @@ var sideCard = document.querySelector("#explore")
       start: "top top",
       end: "bottom bottom", // Match end with pin
       scrub: 1,
-      markers: true,
+      
     },
   });
   
@@ -51,4 +51,26 @@ tl.to(load, {
   delay: 0.5,
   duration: 1,
   ease: "power4.out",
+});
+
+gsap.to("#games-slider .swiper-wrapper", {
+    x: () => `-${document.querySelector("#games-slider .swiper-wrapper").scrollWidth - window.innerWidth}px`,
+    scrollTrigger: {
+        trigger: "#games-slider",
+        scroller: "body",
+        start: "top top",
+        end: () => `+=${document.querySelector("#games-slider .swiper-wrapper").scrollWidth}`, // Keep dynamic calculation for horizontal scroll
+        pin: true,
+        pinSpacing: false, 
+        scrub: 1,
+        
+    },
+});
+
+
+
+const swiper = new Swiper('.swiper-container', {
+  slidesPerView: 3.5,
+  spaceBetween: 30,
+  loop: true,
 });
