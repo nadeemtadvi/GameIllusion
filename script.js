@@ -4,8 +4,6 @@ var load = document.querySelector(".bg-load");
 var card = document.querySelectorAll(".card-one");
 var sideCard = document.querySelector("#explore");
 
-
-
 // ---------------------------------------------------------- #Cursor start ------------------------------------------------
 main.addEventListener("mousemove", function (dets) {
   gsap.to(cursor, {
@@ -17,8 +15,6 @@ main.addEventListener("mousemove", function (dets) {
 });
 
 // ---------------------------------------------------------- #Cursor end ------------------------------------------------
-
-
 
 // ---------------------------------------------------------- #Loader start ------------------------------------------------
 gsap.to(load, {
@@ -53,30 +49,26 @@ function breakText() {
 
   h1.innerHTML = clutter;
   console.log(clutter);
-  
 }
 
 breakText();
 
-
-
-gsap.from(".bg-load h1 .a",{
-    y:80,
-    duration:0.8,
-    delay:0.5,
-    opacity:0,
-    stagger:0.15
-})
-gsap.from(".bg-load h1 .b",{
-    y:80,
-    duration:0.8,
-    delay:0.5,
-    opacity:0,
-    stagger:-0.15
-})
+gsap.from(".bg-load h1 .a", {
+  y: 80,
+  duration: 0.8,
+  delay: 0.5,
+  opacity: 0,
+  stagger: 0.15,
+});
+gsap.from(".bg-load h1 .b", {
+  y: 80,
+  duration: 0.8,
+  delay: 0.5,
+  opacity: 0,
+  stagger: -0.15,
+});
 
 // ---------------------------------------------------------- #text animation end ------------------------------------------------
-
 
 // ---------------------------------------------------------- #Horizonatal Card slide start ------------------------------------------------
 
@@ -137,3 +129,79 @@ const swiper = new Swiper(".swiper-container", {
 });
 
 // ------------------------------------------------------    #Slider End ----------------------------------------------------
+
+// ------------------------------------------------------    #marquee Start ----------------------------------------------------
+
+function marqueAnimation() {
+  window.addEventListener("wheel", function (e) {
+    // console.log(e.deltaY);
+    if (e.deltaY > 0) {
+      // console.log("seedha scroll");
+      gsap.to(".marque", {
+        transform: "translateX(-200%)",
+        ease: "none",
+        duration: 3.5,
+        repeat: -1,
+      });
+      gsap.to(".marque img", {
+        rotate: 180,
+      });
+    } else {
+      // console.log("reverse scroll");
+      gsap.to(".marque", {
+        transform: "translateX(0)",
+        ease: "none",
+        duration: 3.5,
+        repeat: -1,
+      });
+      gsap.to(".marque img", {
+        rotate: 0,
+      });
+    }
+  });
+}
+
+marqueAnimation();
+
+// ------------------------------------------------------    #marquee End ----------------------------------------------------
+function ImageShow() {
+  const elemC = document.querySelector("#elem-container");
+  const fixed = document.querySelector("#fixed-image");
+  const elems = document.querySelectorAll(".elem");
+
+  gsap.set(fixed, {
+    display: "none",
+    opacity: 0,
+  });
+  elemC.addEventListener("mouseenter", function () {
+    gsap.to(fixed, {
+      display: "block",
+      opacity: 1,
+      duration: 0.3,
+    });
+  });
+  elemC.addEventListener("mouseleave", function () {
+    gsap.to(fixed, {
+      opacity: 0,
+      duration: 0.3,
+      onComplete: () => gsap.set(fixed, { display: "none" }),
+    });
+  });
+
+  elems.forEach(function (e) {
+    e.addEventListener("mouseenter", function () {
+      var image = e.getAttribute("data-image");
+      fixed.style.backgroundImage = `url(${image})`;
+    });
+  });
+  elemC.addEventListener("mousemove", function (dets) {
+ 
+    gsap.to(fixed, {
+        x: dets.x,
+        y: dets.y,
+        duration: 0.2,
+        ease: "power2.out",
+    });
+});
+}
+ImageShow();
