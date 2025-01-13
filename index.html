@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+
 
 </head>
 
@@ -16,7 +18,11 @@
     <div
         class="cursor w-16 h-16 border border-white fixed flex items-center justify-center text-[5px] text-[#111] text-center z-[9] rounded-[50%]">
     </div>
-    <div class="bg-load fixed bg-black w-full h-screen z-[999]"></div>
+    <div class="bg-load fixed bg-black w-full h-screen z-[999]">
+        <div class="flex items-center justify-center h-full">
+            <h1 class="text-white text-[4.6rem] font-semibold">GameIllusion</h1>
+        </div>
+    </div>
     <main>
         <header class=" p-4">
             <nav class="container mx-auto flex justify-between items-center">
@@ -25,9 +31,11 @@
 
                     <button class="bg-slate-900 text-white px-4 py-2 rounded-lg hover:bg-slate-900 transition-colors">
                         Join Party
+                        <i class="ri-menu-3-fill ml-2 nav-icon"></i>
                     </button>
                 </div>
             </nav>
+           
         </header>
         <section class="relative h-screen flex items-center justify-center bg-cover bg-center">
             <div class="relative z-10 max-w-4xl mx-auto">
@@ -144,139 +152,149 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div>
-                            <div
-                                class=" hover:shadow-2xl transition-all duration-300 transform hover:-translate-y ">
-                                <div class="relative overflow-hidden  rounded-lg">
-                                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e090c796-b870-437e-93ec-bc3ea196a4d9/dcbosi9-ed088e0a-bc7b-4797-b5e2-6f19c7b7349f.jpg/v1/fill/w_1264,h_632,q_70,strp/keilah_by_ferdinandladera_dcbosi9-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvZTA5MGM3OTYtYjg3MC00MzdlLTkzZWMtYmMzZWExOTZhNGQ5XC9kY2Jvc2k5LWVkMDg4ZTBhLWJjN2ItNDc5Ny1iNWUyLTZmMTljN2I3MzQ5Zi5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.5osSPmwgU2fDWcv6cjprRlq07XWNzWFbovVMl7BixnE"
-                                        alt="Game 1"
-                                        class=" h-[420px] object-cover hover:scale-110 transition-transform duration-500">
-                                    <div
-                                        class="absolute top-4 right-4 bg-slate-950 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                                        New Quest</div>
-                                </div>
-                                <div class="absolute bottom-0 left-0 p-4 bg-[#02061791]">
-                                    <h3 class="text-2xl font-bold text-white mb-2">Dragon's Legacy</h3>
-                                    <p class="text-slate-200 ellpsee">Embark on an epic journey through mystical realms
-                                        filled with ancient dragons, forgotten magic, and untold treasures. Face
-                                        legendary creatures and forge your destiny.</p>
+                                <div
+                                    class=" hover:shadow-2xl transition-all duration-300 transform hover:-translate-y ">
+                                    <div class="relative overflow-hidden  rounded-lg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e090c796-b870-437e-93ec-bc3ea196a4d9/dcbosi9-ed088e0a-bc7b-4797-b5e2-6f19c7b7349f.jpg/v1/fill/w_1264,h_632,q_70,strp/keilah_by_ferdinandladera_dcbosi9-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvZTA5MGM3OTYtYjg3MC00MzdlLTkzZWMtYmMzZWExOTZhNGQ5XC9kY2Jvc2k5LWVkMDg4ZTBhLWJjN2ItNDc5Ny1iNWUyLTZmMTljN2I3MzQ5Zi5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.5osSPmwgU2fDWcv6cjprRlq07XWNzWFbovVMl7BixnE"
+                                            alt="Game 1"
+                                            class=" h-[420px] object-cover hover:scale-110 transition-transform duration-500">
+                                        <div
+                                            class="absolute top-4 right-4 bg-slate-950 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                            New Quest</div>
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 p-4 bg-[#02061791]">
+                                        <h3 class="text-2xl font-bold text-white mb-2">Dragon's Legacy</h3>
+                                        <p class="text-slate-200 ellpsee">Embark on an epic journey through mystical
+                                            realms
+                                            filled with ancient dragons, forgotten magic, and untold treasures. Face
+                                            legendary creatures and forge your destiny.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                            <div
-                                class="  hover:shadow-2xl transition-all duration-300 transform hover:-translate-y ">
-                                <div class="relative overflow-hidden rounded-lg">
-                                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/00705a87-531a-447b-848a-6272f615f3f1/dadlr1p-6fffb8fa-9e28-4265-a719-a42d62b3bf33.jpg/v1/fill/w_1287,h_621,q_70,strp/grand_square__concept_street__by_solarsouth_dadlr1p-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzcyIiwicGF0aCI6IlwvZlwvMDA3MDVhODctNTMxYS00NDdiLTg0OGEtNjI3MmY2MTVmM2YxXC9kYWRscjFwLTZmZmZiOGZhLTllMjgtNDI2NS1hNzE5LWE0MmQ2MmIzYmYzMy5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.CH_EPE3FR69OawmnYcNm2vSwynb05a5-Med1kx_-0nM"
-                                        alt="Game 2"
-                                        class=" h-[420px] object-cover hover:scale-110 transition-transform duration-500">
-                                    <div
-                                        class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                                        Legendary</div>
-                                </div>
-                                <div class="absolute bottom-0 left-0 p-4 bg-[#02061791]">
+                                <div
+                                    class="  hover:shadow-2xl transition-all duration-300 transform hover:-translate-y ">
+                                    <div class="relative overflow-hidden rounded-lg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/00705a87-531a-447b-848a-6272f615f3f1/dadlr1p-6fffb8fa-9e28-4265-a719-a42d62b3bf33.jpg/v1/fill/w_1287,h_621,q_70,strp/grand_square__concept_street__by_solarsouth_dadlr1p-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzcyIiwicGF0aCI6IlwvZlwvMDA3MDVhODctNTMxYS00NDdiLTg0OGEtNjI3MmY2MTVmM2YxXC9kYWRscjFwLTZmZmZiOGZhLTllMjgtNDI2NS1hNzE5LWE0MmQ2MmIzYmYzMy5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.CH_EPE3FR69OawmnYcNm2vSwynb05a5-Med1kx_-0nM"
+                                            alt="Game 2"
+                                            class=" h-[420px] object-cover hover:scale-110 transition-transform duration-500">
+                                        <div
+                                            class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                            Legendary</div>
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 p-4 bg-[#02061791]">
 
-                                    <h3 class="text-2xl font-bold text-white mb-2">Cyber Knights</h3>
-                                    <p class="text-slate-200  ellpsee">Battle through neon-lit cyberpunk cityscapes in a
-                                        dystopian future. Megas and rogue AI in this action-packed adventure where
-                                        technology meets medieval valor.</p>
+                                        <h3 class="text-2xl font-bold text-white mb-2">Cyber Knights</h3>
+                                        <p class="text-slate-200  ellpsee">Battle through neon-lit cyberpunk cityscapes
+                                            in a
+                                            dystopian future. Megas and rogue AI in this action-packed adventure where
+                                            technology meets medieval valor.</p>
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                            <div
-                                class="  hover:shadow-2xl transition-all duration-300 transform hover:-translate-y ">
-                                <div class="relative overflow-hidden rounded-lg ">
-                                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8776250c-1249-49d1-a447-222e30c352a7/dbe3qvi-1bfbfab5-b6f7-4109-befa-c682b380ffef.jpg/v1/fill/w_1316,h_607,q_70,strp/houses_of_the_holy__southern_empire_by_piotrdura_dbe3qvi-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzM5IiwicGF0aCI6IlwvZlwvODc3NjI1MGMtMTI0OS00OWQxLWE0NDctMjIyZTMwYzM1MmE3XC9kYmUzcXZpLTFiZmJmYWI1LWI2ZjctNDEwOS1iZWZhLWM2ODJiMzgwZmZlZi5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.44kWc7NnT-Vqkj7Mz16SQoQDcuwWCzgFmj2yACM4onE"
-                                        alt="Game 3"
-                                        class=" h-[420px] object-cover hover:scale-110 transition-transform duration-500">
-                                    <div
-                                        class="absolute top-4 right-4 bg-slate-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                                        Epic</div>
-                                </div>
-                                <div class="absolute bottom-0 left-0 p-4 bg-[#02061791]">
+                                <div
+                                    class="  hover:shadow-2xl transition-all duration-300 transform hover:-translate-y ">
+                                    <div class="relative overflow-hidden rounded-lg ">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8776250c-1249-49d1-a447-222e30c352a7/dbe3qvi-1bfbfab5-b6f7-4109-befa-c682b380ffef.jpg/v1/fill/w_1316,h_607,q_70,strp/houses_of_the_holy__southern_empire_by_piotrdura_dbe3qvi-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzM5IiwicGF0aCI6IlwvZlwvODc3NjI1MGMtMTI0OS00OWQxLWE0NDctMjIyZTMwYzM1MmE3XC9kYmUzcXZpLTFiZmJmYWI1LWI2ZjctNDEwOS1iZWZhLWM2ODJiMzgwZmZlZi5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.44kWc7NnT-Vqkj7Mz16SQoQDcuwWCzgFmj2yACM4onE"
+                                            alt="Game 3"
+                                            class=" h-[420px] object-cover hover:scale-110 transition-transform duration-500">
+                                        <div
+                                            class="absolute top-4 right-4 bg-slate-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                            Epic</div>
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 p-4 bg-[#02061791]">
 
-                                    <h3 class="text-2xl font-bold text-white mb-2">Mystic Puzzles</h3>
-                                    <p class="text-slate-200 ellpsee">Solve ancient mysteries and unlock magical powers
-                                        in this mind-bending adventure. Navigate through enchanted labyrinths, decipher
-                                        cryptic runes, and harness the forces of nature to overcome challenging puzzles
-                                        that guard the secrets of a long-lost civilization.</p>
+                                        <h3 class="text-2xl font-bold text-white mb-2">Mystic Puzzles</h3>
+                                        <p class="text-slate-200 ellpsee">Solve ancient mysteries and unlock magical
+                                            powers
+                                            in this mind-bending adventure. Navigate through enchanted labyrinths,
+                                            decipher
+                                            cryptic runes, and harness the forces of nature to overcome challenging
+                                            puzzles
+                                            that guard the secrets of a long-lost civilization.</p>
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                            <div
-                                class=" hover:shadow-2xl transition-all duration-300 transform hover:-translate-y ">
-                                <div class="relative overflow-hidden rounded-lg ">
-                                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e090c796-b870-437e-93ec-bc3ea196a4d9/dcbosi9-ed088e0a-bc7b-4797-b5e2-6f19c7b7349f.jpg/v1/fill/w_1264,h_632,q_70,strp/keilah_by_ferdinandladera_dcbosi9-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvZTA5MGM3OTYtYjg3MC00MzdlLTkzZWMtYmMzZWExOTZhNGQ5XC9kY2Jvc2k5LWVkMDg4ZTBhLWJjN2ItNDc5Ny1iNWUyLTZmMTljN2I3MzQ5Zi5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.5osSPmwgU2fDWcv6cjprRlq07XWNzWFbovVMl7BixnE"
-                                        alt="Game 1"
-                                        class=" h-[420px] object-cover hover:scale-110 transition-transform duration-500">
-                                    <div
-                                        class="absolute top-4 right-4 bg-slate-950 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                                        New Quest</div>
-                                </div>
-                                <div class="absolute bottom-0 left-0 p-4 bg-[#02061791]">
-                                    <h3 class="text-2xl font-bold text-white mb-2">Dragon's Legacy</h3>
-                                    <p class="text-slate-200 ellpsee">Embark on an epic journey through mystical realms
-                                        filled with ancient dragons, forgotten magic, and untold treasures. Face
-                                        legendary creatures and forge your destiny.</p>
+                                <div
+                                    class=" hover:shadow-2xl transition-all duration-300 transform hover:-translate-y ">
+                                    <div class="relative overflow-hidden rounded-lg ">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/e090c796-b870-437e-93ec-bc3ea196a4d9/dcbosi9-ed088e0a-bc7b-4797-b5e2-6f19c7b7349f.jpg/v1/fill/w_1264,h_632,q_70,strp/keilah_by_ferdinandladera_dcbosi9-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9ODAwIiwicGF0aCI6IlwvZlwvZTA5MGM3OTYtYjg3MC00MzdlLTkzZWMtYmMzZWExOTZhNGQ5XC9kY2Jvc2k5LWVkMDg4ZTBhLWJjN2ItNDc5Ny1iNWUyLTZmMTljN2I3MzQ5Zi5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.5osSPmwgU2fDWcv6cjprRlq07XWNzWFbovVMl7BixnE"
+                                            alt="Game 1"
+                                            class=" h-[420px] object-cover hover:scale-110 transition-transform duration-500">
+                                        <div
+                                            class="absolute top-4 right-4 bg-slate-950 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                            New Quest</div>
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 p-4 bg-[#02061791]">
+                                        <h3 class="text-2xl font-bold text-white mb-2">Dragon's Legacy</h3>
+                                        <p class="text-slate-200 ellpsee">Embark on an epic journey through mystical
+                                            realms
+                                            filled with ancient dragons, forgotten magic, and untold treasures. Face
+                                            legendary creatures and forge your destiny.</p>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                            <div
-                                class="  hover:shadow-2xl transition-all duration-300 transform hover:-translate-y ">
-                                <div class="relative overflow-hidden rounded-lg">
-                                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/00705a87-531a-447b-848a-6272f615f3f1/dadlr1p-6fffb8fa-9e28-4265-a719-a42d62b3bf33.jpg/v1/fill/w_1287,h_621,q_70,strp/grand_square__concept_street__by_solarsouth_dadlr1p-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzcyIiwicGF0aCI6IlwvZlwvMDA3MDVhODctNTMxYS00NDdiLTg0OGEtNjI3MmY2MTVmM2YxXC9kYWRscjFwLTZmZmZiOGZhLTllMjgtNDI2NS1hNzE5LWE0MmQ2MmIzYmYzMy5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.CH_EPE3FR69OawmnYcNm2vSwynb05a5-Med1kx_-0nM"
-                                        alt="Game 2"
-                                        class=" h-[420px] object-cover hover:scale-110 transition-transform duration-500">
-                                    <div
-                                        class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                                        Legendary</div>
-                                </div>
-                                <div class="absolute bottom-0 left-0 p-4 bg-[#02061791]">
+                                <div
+                                    class="  hover:shadow-2xl transition-all duration-300 transform hover:-translate-y ">
+                                    <div class="relative overflow-hidden rounded-lg">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/00705a87-531a-447b-848a-6272f615f3f1/dadlr1p-6fffb8fa-9e28-4265-a719-a42d62b3bf33.jpg/v1/fill/w_1287,h_621,q_70,strp/grand_square__concept_street__by_solarsouth_dadlr1p-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzcyIiwicGF0aCI6IlwvZlwvMDA3MDVhODctNTMxYS00NDdiLTg0OGEtNjI3MmY2MTVmM2YxXC9kYWRscjFwLTZmZmZiOGZhLTllMjgtNDI2NS1hNzE5LWE0MmQ2MmIzYmYzMy5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.CH_EPE3FR69OawmnYcNm2vSwynb05a5-Med1kx_-0nM"
+                                            alt="Game 2"
+                                            class=" h-[420px] object-cover hover:scale-110 transition-transform duration-500">
+                                        <div
+                                            class="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                            Legendary</div>
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 p-4 bg-[#02061791]">
 
-                                    <h3 class="text-2xl font-bold text-white mb-2">Cyber Knights</h3>
-                                    <p class="text-slate-200  ellpsee">Battle through neon-lit cyberpunk cityscapes in a
-                                        dystopian future. Megas and rogue AI in this action-packed adventure where
-                                        technology meets medieval valor.</p>
+                                        <h3 class="text-2xl font-bold text-white mb-2">Cyber Knights</h3>
+                                        <p class="text-slate-200  ellpsee">Battle through neon-lit cyberpunk cityscapes
+                                            in a
+                                            dystopian future. Megas and rogue AI in this action-packed adventure where
+                                            technology meets medieval valor.</p>
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                         <div class="swiper-slide">
                             <div>
-                            <div
-                                class="  hover:shadow-2xl transition-all duration-300 transform hover:-translate-y ">
-                                <div class="relative overflow-hidden rounded-lg ">
-                                    <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8776250c-1249-49d1-a447-222e30c352a7/dbe3qvi-1bfbfab5-b6f7-4109-befa-c682b380ffef.jpg/v1/fill/w_1316,h_607,q_70,strp/houses_of_the_holy__southern_empire_by_piotrdura_dbe3qvi-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzM5IiwicGF0aCI6IlwvZlwvODc3NjI1MGMtMTI0OS00OWQxLWE0NDctMjIyZTMwYzM1MmE3XC9kYmUzcXZpLTFiZmJmYWI1LWI2ZjctNDEwOS1iZWZhLWM2ODJiMzgwZmZlZi5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.44kWc7NnT-Vqkj7Mz16SQoQDcuwWCzgFmj2yACM4onE"
-                                        alt="Game 3"
-                                        class=" h-[420px] object-cover hover:scale-110 transition-transform duration-500">
-                                    <div
-                                        class="absolute top-4 right-4 bg-slate-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                                        Epic</div>
-                                </div>
-                                <div class="absolute bottom-0 left-0 p-4 bg-[#02061791]">
+                                <div
+                                    class="  hover:shadow-2xl transition-all duration-300 transform hover:-translate-y ">
+                                    <div class="relative overflow-hidden rounded-lg ">
+                                        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/8776250c-1249-49d1-a447-222e30c352a7/dbe3qvi-1bfbfab5-b6f7-4109-befa-c682b380ffef.jpg/v1/fill/w_1316,h_607,q_70,strp/houses_of_the_holy__southern_empire_by_piotrdura_dbe3qvi-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NzM5IiwicGF0aCI6IlwvZlwvODc3NjI1MGMtMTI0OS00OWQxLWE0NDctMjIyZTMwYzM1MmE3XC9kYmUzcXZpLTFiZmJmYWI1LWI2ZjctNDEwOS1iZWZhLWM2ODJiMzgwZmZlZi5qcGciLCJ3aWR0aCI6Ijw9MTYwMCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.44kWc7NnT-Vqkj7Mz16SQoQDcuwWCzgFmj2yACM4onE"
+                                            alt="Game 3"
+                                            class=" h-[420px] object-cover hover:scale-110 transition-transform duration-500">
+                                        <div
+                                            class="absolute top-4 right-4 bg-slate-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
+                                            Epic</div>
+                                    </div>
+                                    <div class="absolute bottom-0 left-0 p-4 bg-[#02061791]">
 
-                                    <h3 class="text-2xl font-bold text-white mb-2">Mystic Puzzles</h3>
-                                    <p class="text-slate-200 ellpsee">Solve ancient mysteries and unlock magical powers
-                                        in this mind-bending adventure. Navigate through enchanted labyrinths, decipher
-                                        cryptic runes, and harness the forces of nature to overcome challenging puzzles
-                                        that guard the secrets of a long-lost civilization.</p>
+                                        <h3 class="text-2xl font-bold text-white mb-2">Mystic Puzzles</h3>
+                                        <p class="text-slate-200 ellpsee">Solve ancient mysteries and unlock magical
+                                            powers
+                                            in this mind-bending adventure. Navigate through enchanted labyrinths,
+                                            decipher
+                                            cryptic runes, and harness the forces of nature to overcome challenging
+                                            puzzles
+                                            that guard the secrets of a long-lost civilization.</p>
 
+                                    </div>
                                 </div>
                             </div>
-                        </div>
                         </div>
                     </div>
 
@@ -285,60 +303,14 @@
             </div>
         </section>
 
-        <section class="py-16 px-6 ">
+        <section class="py-16 px-6 mt-[50vh]">
             <div class="container mx-auto">
-                <div class="h-[40vh]"></div>
-                <h2 class="text-4xl font-bold mb-12 text-center text-white">Legendary Features</h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <div
-                        class="bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-200">
-                        <div class="bg-slate-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
-                                </path>
-                            </svg>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-4 text-center">Epic Graphics</h3>
-                        <p class="text-slate-200 text-center leading-relaxed">Experience stunning visuals that bring
-                            fantasy worlds to life.</p>
-                    </div>
-
-                    <div
-                        class="bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-200">
-                        <div class="bg-slate-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                                </path>
-                            </svg>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-4 text-center">Mythical Realms</h3>
-                        <p class="text-slate-200 text-center leading-relaxed">Explore vast worlds filled with magic,
-                            mystery, and adventure.</p>
-                    </div>
-
-                    <div
-                        class="bg-slate-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-slate-200">
-                        <div class="bg-slate-700 w-16 h-16 rounded-lg flex items-center justify-center mb-6 mx-auto">
-                            <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z">
-                                </path>
-                            </svg>
-                        </div>
-                        <h3 class="text-2xl font-bold text-white mb-4 text-center">Guild System</h3>
-                        <p class="text-slate-200 text-center leading-relaxed">Join forces with players worldwide in epic
-                            multiplayer quests.</p>
-                    </div>
-                </div>
+                <h1 class="text-black p-4 bg-white">Head</h1>
             </div>
         </section>
+
+        <!-- ------------------------------------Add Sample Game------------------------------------ -->
+
 
     </main>
 
