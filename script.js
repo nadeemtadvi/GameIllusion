@@ -164,44 +164,35 @@ function marqueAnimation() {
 marqueAnimation();
 
 // ------------------------------------------------------    #marquee End ----------------------------------------------------
-function ImageShow() {
+
   const elemC = document.querySelector("#elem-container");
-  const fixed = document.querySelector("#fixed-image");
   const elems = document.querySelectorAll(".elem");
 
-  gsap.set(fixed, {
-    display: "none",
-    opacity: 0,
-  });
-  elemC.addEventListener("mouseenter", function () {
-    gsap.to(fixed, {
-      display: "block",
-      opacity: 1,
-      duration: 0.3,
+  elems.forEach(function (elem) {
+    elem.addEventListener("mouseenter", function () {
+      const att = elem.getAttribute("data-image");
+      gsap.to(cursor, {
+        width: "400px",
+        height: "300px",
+        borderRadius: "20px",
+        backgroundImage: `url(${att})`,
+        backgroundSize: "cover", 
+        backgroundPosition: "center",
+        duration: 0.3,
+        ease: "power1.out",
+      });
+    });
+  
+    elem.addEventListener("mouseleave", function () {
+      gsap.to(cursor, {
+        width: "64px",
+        height: "64px",
+        borderRadius:"50%",
+        backgroundColor:"#EDBFFF",
+        backgroundImage: "none",
+        duration: 0.3,
+        ease: "power1.out",
+      });
     });
   });
-  elemC.addEventListener("mouseleave", function () {
-    gsap.to(fixed, {
-      opacity: 0,
-      duration: 0.3,
-      onComplete: () => gsap.set(fixed, { display: "none" }),
-    });
-  });
-
-  elems.forEach(function (e) {
-    e.addEventListener("mouseenter", function () {
-      var image = e.getAttribute("data-image");
-      fixed.style.backgroundImage = `url(${image})`;
-    });
-  });
-  elemC.addEventListener("mousemove", function (dets) {
- 
-    gsap.to(fixed, {
-        x: dets.x,
-        y: dets.y,
-        duration: 0.2,
-        ease: "power2.out",
-    });
-});
-}
-ImageShow();
+  

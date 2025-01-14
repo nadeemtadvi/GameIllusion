@@ -9,10 +9,14 @@ body {
   width: 100%;
 }
 
+    .cursor{
+  mix-blend-mode: difference;
+
+}
 .side-card {
-  position: relative; /* Use relative for proper pinning by ScrollTrigger */
+  position: relative; 
   top: 0;
-  width: 100%; /* Adjust based on the column layout */
+  width: 100%;
   height: auto;
   padding: 20px;
   z-index: 10;
@@ -29,6 +33,8 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  mix-blend-mode: normal;
+
 }
 .ellpsee {
   display: -webkit-box;
