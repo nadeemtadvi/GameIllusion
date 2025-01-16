@@ -9,12 +9,11 @@ body {
   width: 100%;
 }
 
-    .cursor{
+.cursor {
   mix-blend-mode: difference;
-
 }
 .side-card {
-  position: relative; 
+  position: relative;
   top: 0;
   width: 100%;
   height: auto;
@@ -34,7 +33,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   mix-blend-mode: normal;
-
 }
 .ellpsee {
   display: -webkit-box;
@@ -42,9 +40,9 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.swiper-container::-webkit-scrollbar{
+.swiper-container::-webkit-scrollbar {
   display: none;
 }
 .swiper-wrapper {
- transform: translateX(50%);
+  transform: translateX(50%);
 }
