@@ -46,3 +46,10 @@ body {
 .swiper-wrapper {
   transform: translateX(50%);
 }
+@media screen and (max-width:768px) {
+
+  .side-card , .scrolling-content{
+
+  padding: 0px;
+}
+}

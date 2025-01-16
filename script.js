@@ -126,6 +126,21 @@ const swiper = new Swiper(".swiper-container", {
   slidesPerView: 3.5,
   spaceBetween: 30,
   loop: true,
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 30,
+    },
+   
+  },
 });
 
 // ------------------------------------------------------    #Slider End ----------------------------------------------------
